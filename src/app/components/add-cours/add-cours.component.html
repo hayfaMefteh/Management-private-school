@@ -1,0 +1,30 @@
+<div class="container-fluid bg-primary mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+        <h3 class="display-3 font-weight-bold text-white">addCours</h3>
+        <!-- <div class="d-inline-flex text-white">
+            <p class="m-0"><a class="text-white" href="">Home</a></p>
+            <p class="m-0 px-2">/</p>
+            <p class="m-0">Contact Us</p>
+        </div> -->
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Contact Start -->
+<div class="card-body rounded-bottom bg-primary p-4">
+    <form #coursForm="ngForm" (ngSubmit)="addCours()">
+        <div class="form-group">
+            <input type="text" class="form-control" [(ngModel)]="cours.name" [ngModelOptions]="{standalone:true}" placeholder="name">
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" [(ngModel)]="cours.coef" [ngModelOptions]="{standalone:true}" placeholder="coef">
+          </div>
+      <div class="form-group">
+        <input type="number" class="form-control" [(ngModel)]="cours.nbrH" [ngModelOptions]="{standalone:true}" placeholder="nbrH">
+      </div>
+      
+      <div class="form-group">
+        <input type="submit" class="btn btn-primary py-3 px-5" [value]="title">
+      </div>
+    </form>  
+</div>
