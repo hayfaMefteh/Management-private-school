@@ -11,6 +11,8 @@ import { SingupComponent } from './components/singup/singup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddCoursComponent } from './components/add-cours/add-cours.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { SingupTeacherComponent } from './components/singup-teacher/singup-teacher.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -22,7 +24,9 @@ import { AdminComponent } from './components/admin/admin.component';
     HomeComponent,
     SingupComponent,
     AddCoursComponent,
-    AdminComponent
+    AdminComponent,
+    SingupTeacherComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

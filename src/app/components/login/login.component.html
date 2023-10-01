@@ -1,0 +1,37 @@
+<div class="container-fluid bg-primary mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+        <h3 class="display-3 font-weight-bold text-white">Login</h3>
+        <!-- <div class="d-inline-flex text-white">
+            <p class="m-0"><a class="text-white" href="">Home</a></p>
+            <p class="m-0 px-2">/</p>
+            <p class="m-0">Contact Us</p>
+        </div> -->
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Contact Start -->
+<div class="card-body rounded-bottom bg-primary p-4">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="form-group">
+          <!-- <input type="text" formControlName="phoneNumber" required> -->
+          <input type="text" class="form-control" formControlName="number" placeholder="Phone Number" required>
+
+          <div *ngIf="loginForm.controls.number.invalid && (loginForm.controls.number.dirty || loginForm.controls.number.touched)">
+            Phone number is required.
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <!-- <input type="password" formControlName="password" required> -->
+          <div class="form-group">
+            <input type="password" class="form-control border-0 p-4" formControlName="pwd" placeholder="Password" required>
+        </div>
+          <div *ngIf="loginForm.controls.pwd.invalid && (loginForm.controls.pwd.dirty || loginForm.controls.pwd.touched)">
+            Password is required.
+          </div>
+        </div>
+    
+        <button class="btn btn-secondary btn-block border-0 py-3" type="submit" [disabled]="loginForm.invalid">Login</button>
+      </form>
+</div>

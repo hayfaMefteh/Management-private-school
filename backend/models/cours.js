@@ -1,12 +1,13 @@
 const mongoose = require("mongoose");
 
-const coursSchema = mongoose.Schema({
+const courSchema = mongoose.Schema({
     coef: Number,
+    teacherID: String,
     nbrH: Number,
-    name: String,
+    name: String
    
-})
+});
 
-const cours = mongoose.model("Cours", coursSchema);
+const cour = mongoose.model("Cours", courSchema);
 
-module.exports = cours;
+module.exports = cour;

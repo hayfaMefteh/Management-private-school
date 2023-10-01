@@ -1,38 +1,59 @@
 <div class="container-fluid bg-light position-relative shadow">
-    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
-      <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px">
-        <i class="flaticon-043-teddy-bear"></i>
-        <span class="text-primary">KidKinder</span>
-      </a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-        <div class="navbar-nav font-weight-bold mx-auto py-0">
-          <a routerLink="" class="nav-item nav-link active">Home</a>
-          <a href="class.html" class="nav-item nav-link">Classes</a>
-          <a href="team.html" class="nav-item nav-link">Teachers</a>
-  
-          <!-- <div  class="nav-item dropdown nav-link dropdown-toggle "data-toggle="dropdown">
-            SingUp
-            <div class="dropdown-menu rounded-0 m-0">
-              <a routerLink="singup" class="dropdown-item">  SingUp Parents</a>
-              <a href="single.html" class="dropdown-item">  SingUp Teachers</a>
-              <a href="single.html" class="dropdown-item">  SingUp Students </a>
-            </div>
-          </div> -->
-  
-  
-          <!-- <a routerLink="login"  class="nav-item nav-link">login</a>-->
-          <a routerLink="subscription" class="nav-item nav-link">SingUp</a> 
-          <a routerLink="addCours" class="nav-item nav-link">addCours</a> 
+  <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+    <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px">
+      <i class="flaticon-043-teddy-bear"></i>
+      <span class="text-primary">KidKinder</span>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <div class="navbar-nav font-weight-bold mx-auto py-0">
+        <a routerLink="" class="nav-item nav-link active">Home</a>
+        <a href="class.html" class="nav-item nav-link">Classes</a>
+        <a href="team.html" class="nav-item nav-link">Teachers</a>
+
+        
+
+
+        <!-- <a routerLink="login"  class="nav-item nav-link">login</a>-->
+        <!-- <a routerLink="subscription" class="nav-item nav-link">SingUp</a> 
+          <a routerLink="subscriptionTeacher" class="nav-item nav-link">SingUp Teacher</a> 
+          <a routerLink="subscriptionAdmin" class="nav-item nav-link">SingUp Admin</a>  -->
+        <a routerLink="addCours" class="nav-item nav-link">addCours</a>
+
+      </div>
+
+      <!-- <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle px-4" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          SingUp
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" routerLink="subscription">SingUp Students</a>
+          <a class="dropdown-item" routerLink="subscriptionTeacher">SingUp Teachers</a>
+          <a class="dropdown-item" routerLink="subscriptionAdmin">SingUp Admin</a>
 
         </div>
-        <a routerLink="admin" class="btn btn-primary px-4 ">Admin</a>
+
+      </div> -->
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle px-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SingUp
+
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" routerLink="subscription">SingUp Students</a>
+          <a class="dropdown-item" routerLink="subscriptionTeacher">SingUp Teachers</a>
+          <a class="dropdown-item" routerLink="subscriptionAdmin">SingUp Admin</a>
+        </div>
       </div>
-    </nav>
-  </div>
-  <!-- Navbar End -->
-  
-  <!-- Header Start -->
-  
+
+
+      <a routerLink="login" class="btn btn-primary px-4 ">login</a>
+    </div>
+  </nav>
+</div>
+<!-- Navbar End -->
+
+<!-- Header Start -->

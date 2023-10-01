@@ -71,6 +71,22 @@
         <!-- <div class="form-group">
                 <input type="file" class="form-control border-0 p-4"  placeholder="Password"   >
               </div> -->
+
+              <div class="form-group">
+                <input type="number" class="form-control" formControlName="number" placeholder="Phone Number">
+              </div>
+
+              <div class="form-group" style="visibility:hidden">
+                <input type="file" class="form-control" #filePicker (change)="onImageSelected($event)">
+              </div>
+          
+              <div class="text-center">
+                <button class="btn btn-warning" (click)="filePicker.click()"> Please select your avatar</button>
+              </div>
+              <div class="text-center  " style="width: 200px;">
+          
+                <img [src]="imagePreview" alt="">
+              </div>
         <button class="btn btn-secondary btn-block border-0 py-3" type="submit" (click)="signup()"
             >
             SingUp
